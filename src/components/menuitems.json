@@ -1,0 +1,23 @@
+{ "": [
+    {
+        "item": "Cheeseburger", 
+        "image": "KG_cheeseburger.jpg", 
+        "description":"The classic McDouble® burger stacks two 100% pure beef patties seasoned with just a pinch of salt and pepper. Wondering what the difference is between a McDouble® and a Double Cheeseburger? A slice of cheese! It's topped with tangy pickles, chopped onions, ketchup, mustard and a melty slice of American cheese.",
+        "price": "2.99"
+    }
+    ],
+
+    "maincourse":   [ {
+        "item": "Cheeseburger", 
+        "image": "KG_cheeseburger.jpg", 
+        "description":"The classic McDouble® burger stacks two 100% pure beef patties seasoned with just a pinch of salt and pepper. Wondering what the difference is between a McDouble® and a Double Cheeseburger? A slice of cheese! It's topped with tangy pickles, chopped onions, ketchup, mustard and a melty slice of American cheese.",
+        "price": "2.99"
+    } , 
+    {
+
+    }
+    ], 
+    "deserts" : [{}], 
+    "drink": [{}]
+
+}

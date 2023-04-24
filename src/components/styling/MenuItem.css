@@ -1,0 +1,21 @@
+.MenuItem { 
+    text-align: center;
+    width: 300px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.69);
+    margin: 5px;
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.pic img{
+   height:200px;
+   width: 300px;
+   object-fit: cover;
+}
+
+.price {
+    color:red;
+    margin-top: auto; 
+}

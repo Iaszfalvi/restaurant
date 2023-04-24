@@ -1,39 +1,63 @@
 import React from 'react'
 import "../styling/Menu.css"
+import MenuItem from "./MenuItem"
+import data from "../files/menuItems.json"
 
-// function Menu() {
-//   return (
-//     <>
-//       <div className='menu'>
-//         Menu
-//       </div>
-//     </>
-//   )
-// }
-
-import { FaUtensils } from 'react-icons/fa';
-import { MdLocalDining } from 'react-icons/md';
-import { RiMenuLine } from 'react-icons/ri';
 
 function Menu() {
+
+  const {appetizers, maincourses, desserts, drinks } = data;
+
+
   return (
-    <div className="restaurant-page">
-     
-        {/* <div className="logo">
-          <MdLocalDining size={40} />
-          <h2>Restaurant Name</h2>
-        </div>
-        <div className="menu-icon">
-          <RiMenuLine size={30} />
-        </div> */}
-     
-      <header className="header">
-        <h1>Welcome to our restaurant!</h1>
-        <p>We serve delicious food and drinks.</p>
-        <div className="utensils">
-          <FaUtensils size={60} />
-        </div>
-      </header>
+    <div className="menu-page">
+      <h1>Appetizers</h1>
+      <div className="appetizers d-flex">
+
+        {appetizers.map((item) => (
+        <MenuItem 
+        title={item.title} 
+        image={item.image} 
+        description={item.description}
+        price={item.price}
+        />
+        ))}
+        
+      </div>
+
+      <h1>Maincourse</h1>
+      <div className="maincourse d-flex">
+      {maincourses.map((item) => (
+        <MenuItem 
+        title={item.title} 
+        image={item.image} 
+        description={item.description}
+        price={item.price}
+        />
+        ))}
+      </div>
+      <h1>Desserts</h1>
+      <div className="desserts d-flex">
+      {desserts.map((item) => (
+        <MenuItem 
+        title={item.title} 
+        image={item.image} 
+        description={item.description}
+        price={item.price}
+        />
+        ))}
+      </div>
+      <h1>Drinks</h1>
+      <div className="drinks d-flex">
+      {drinks.map((item) => (
+        <MenuItem 
+        title={item.title} 
+        image={item.image} 
+        description={item.description}
+        price={item.price}
+        />
+        ))}
+      </div>
     </div>
   );
 }

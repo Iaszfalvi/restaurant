@@ -1,45 +1,26 @@
-.menu{
-    margin-top: 60px;
-}
+.menu-page{
+    padding-top: 60px;
+    background: url("../images/menu-back3.jpg"), rgba(0,0,0,.3);
+ 
+    background-repeat: none;
+    background-size: cover;
+} 
 
-.restaurant-page {
+  .d-flex {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .menu-page h1{
+    display: flex;
     justify-content: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-  }
-  
+    font-size: 5rem;
 
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo h2 {
-    margin-left: 1rem;
-  }
-  
-  .menu-icon {
-    cursor: pointer;
-  }
-  
-  .header {
-    text-align: center;
-    margin-top: 2rem;
-  }
-  
-  .header h1 {
-    font-size: 3rem;
-  }
-  
-  .header p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .utensils {
-    margin-top: 2rem;
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
   }

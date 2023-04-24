@@ -2,10 +2,15 @@ import React from "react";
 import "../styling/Home.css";
 import Hours from "./hours";
 import data from "../files/hours.json"
+import students from "../files/menuItems.json"
+import pic1 from "../images/pic1.jpg"
+import pic2 from "../images/pic2.jpg"
 
 const Home = () => {
+  console.log(students)
 
   function storeHours() {
+    console.log(data)
     return data.map((day) =>
     <Hours day = {day.day}
      open = {day.openingHour} 
@@ -26,13 +31,16 @@ const Home = () => {
         Come on in and treat yourself to a delicious meal today. 
 
         </p>
-
-         <div>{storeHours()}</div>
+        <div className="hours-div">
+        <div className="hours-home">{storeHours()}</div>
+        </div>
+        
         
 
       </div>
       <div className="rest-picture">
-
+        <img src={pic1} alt="" className="pic-one" />
+        <img src={pic2} alt="" className="pic-two" />
       </div>
     </div>
   );

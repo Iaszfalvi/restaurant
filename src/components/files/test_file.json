@@ -1,0 +1,31 @@
+[{
+    "appetizers" : [{
+        "image" : "sn_steak.jpeg",
+        "title" : "Hamburger", 
+        "description" : "Describe what it is",
+        "price" :15.99
+    }],
+    "maincourses" : [{
+        "image" : "sn_steak.jpeg",
+        "title" : "Hamburger", 
+        "description" : "Describe what it is",
+        "price" :15.99
+    },{
+        "image" : "sn_steak.jpeg",
+        "title" : "Hamburger", 
+        "description" : "Describe what it is",
+        "price" :15.99
+    }], 
+    "desserts" : [{
+        "image" : "sn_steak.jpeg",
+        "title" : "Hamburger", 
+        "description" : "Describe what it is",
+        "price" :15.99
+    }],
+    "drinks" : [{
+        "image" : "sn_steak.jpeg",
+        "title" : "Hamburger", 
+        "description" : "Describe what it is",
+        "price" :15.99
+    }]
+}]
